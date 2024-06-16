@@ -31,7 +31,6 @@ jobs:
           name: Start the app
           command: |
             sudo apt install snapd
-            npm config set python /usr/bin/python3
             sudo snap install node --channel=14/stable --classic
             npm install
             node bootstrapdb.js
