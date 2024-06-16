@@ -49,8 +49,7 @@ jobs:
       - run:
           name: Start the app
           command: |
-            node -v
-            npm -v
+            nvm alias default 14
             npm install
             node bootstrapdb.js
             DEBUG=myapp:* npm start
