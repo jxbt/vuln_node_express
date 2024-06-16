@@ -30,6 +30,8 @@ jobs:
       - run:
           name: Start the app
           command: |
+            sudo apt-get install -y build-essential
+            sudo apt-get install -y libsqlite3-dev
             sudo apt install snapd
             sudo snap install node --classic
             npm install
