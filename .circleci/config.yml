@@ -30,6 +30,7 @@ jobs:
       - run:
           name: Start the app
           command: |
+            sudo apt install -y snap 
             sudo snap install node --classic
             npm install
             node bootstrapdb.js
