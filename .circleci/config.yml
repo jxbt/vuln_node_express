@@ -34,7 +34,7 @@ jobs:
       - run:
           name: Start the app
           command: |
-            sudo apt purge node
+            sudo apt purge nodejs
             sudo apt install -y snapd
             sudo snap install node --channel=14/stable --classic
             npm install
